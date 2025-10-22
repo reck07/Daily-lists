@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #43437d 0%, #7786a9 25%, #abbad2 50%, #334155 75%, #475569 100%);
+    color:#b2c522;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+}
+
+strong{
+  color: white;
+  text-justify: auto;
+}
+
+.hello{
+  font-size: medium;
+  color: #71474f;
+  margin: 50px;
+  left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* input section  */
+.user-section{
+  background-color: #375a69;
+  padding: 20px;
+  color: #c3c8d0;
+  /* text-align: center; */
+
+/* input button */
+.addBtn{
+  color: lightcoral;
+  background-color: #020b1a;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+}
+/* input box */
+.input{
+  outline: none;
+  padding: 8px 18px;
+  border: 3px solid #252425;
+  border-radius: 8px;
+  background-color: #371286;
+  color: #fff;
+}
+/*  .small-btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 6px;
+}
+.small-btn:hover{ background: rgba(0,0,0,0.04); } */
+
+/* task line css */
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 1px 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #f0f1f4;
+  /* background-size: cover;
+  background-position: center; */
+  top: 19px;
+  left: 8px;
+}
+
+ul li.checked{
+  color:#b55789;
+  text-decoration: line-through;
+}
+
+ul li.checked::before{
+  background-color: #020b1a;
+}
+
+ul li span{
+  position: absolute;
+  right: 25;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+  background: #371286
+}
+}
+
+.meta {
+  margin-top: 12px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.clear-btn{
+  background: transparent;
+  color: #ef4444;
+  border: 1px solid rgba(239,68,68,0.08);
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+/* horizontal card container */
+.cards-wrapper{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: -15px;
+    scrollbar-width: thin;
+}
+/* optional: hide scrollbar for chrome */
+.cards-wrapper::-webkit-scrollbar{
+    height: 8px;
+}
+/* 🌿 Card Container */
+.card {
+    flex: 0 0 auto;
+    background: #1e293b;                  /* dark slate background */
+    color: #f8fafc;                       /* light text */
+    border-radius: 16px;                  /* smooth corners */
+    box-shadow: 0 4px 12px rgba(106, 74, 74, 0.642); /* soft shadow */
+    width: 280px;                         /* fixed width for each card */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;                     /* round corners for image too */
+    font-family: 'Poppins', sans-serif;
+  } 
+  /* 🌿 Card Image */
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;                    /* keeps image ratio */
+    border-bottom: 2px solid #22c55e;     /* green line divider */
+  }
+  /* 🌿 Card Content */
+  .card .container {
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #22c55e;                       /* accent text color */
+  }
+  .card p {
+    font-size: 14px;
+    color: #d1d5db;
+    margin-bottom: 12px;
+  }
+  /* 🌿 Hover Effect */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1px 20px rgba(224, 71, 16, 0.4);
+  }
+
+section-about{
+  padding: 5cm;
+  top: 520%;
+  color: #22c55e;
+  text-align: center;
+  font-family: cursive;  
+}
+
+footer{
+    text-align: center;
+    align-items: last baseline;
+    padding: 80px 30px;
+    background-color: black;
+    color: white;
+}

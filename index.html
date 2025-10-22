@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>DailyDiary</title>
+</head>
+<!-- Body of html -->
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">DailyDiary</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#mydiv">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><br><br><br>
+
+<!-- input box to do list -->
+<section class="user-section">
+  <div id="mydiv" class="header">
+    <h1><p id="Hello" style="font-family: 'Times New Roman', Times, serif;"><i>TO-DO-LIST</i></p></h1>
+    <input class="input" type="text" id="userInput" placeholder="enter here..">
+    <button onclick="addList()" id="My_btn" class="addBtn">Add</button>
+    <div>
+    <ul id="tasklist">
+      <!-- <li class="checked"><b>Task 1!</b></li>
+      <li>Task 2!</li>
+      <li>Task 3!</li> -->
+    </ul>
+  </div>
+</div>
+  <div id="meta">
+    <span id="count">No task</span>
+  </div>
+ </section><br><br>
+
+<!-- the main section instruction -->
+<main type="instruction about page and gallery">
+ <!-- the instruction paragraph -->
+<section1 >
+<div class="hello"><h1 style="font-size: 25px;">The Instruction and Working<br>it is a structured list of tasks, goals, 
+  or activities to be completed within a specific timeframe, used to organize, prioritize,
+  and track work for increased productivity and clarity.</strong></h1>
+  <li><strong>Function:</strong> It serves as a personal or team management tool
+  to keep track of what needs to be done, preventing tasks from being forgotten.</li>
+  <li><strong>Purpose:</strong> Creating one helps increase productivity, reduce stress,
+  and allows you to better manage your time by providing a clear overview of your responsibilities.</li> 
+  <li><strong>It works:</strong> You typically list all necessary tasks, organize
+  them by priority, and set deadlines to know what is time-sensitive. Checking
+  items off as they are completed provides a sense of accomplishment and motivation.</li>
+  <li><strong>Flexibility:</strong> To-do lists can be used for various aspects of life,
+  including work, school, or household chores, and can be as simple as a pen
+  and paper or as complex as a digital application for teams.</li>
+</div></section1><br><br><br><br>
+
+<!-- plant card -->
+<section id="gallery">
+<h2 style="text-align: center; color: rgb(16, 55, 75); font-family: cursive;">Plant gallery</h2>
+  <div class="cards-wrapper">
+      <div class="card" >
+        <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/beautifall-summer-nights-pothos-pothos-plant-proven-winners_18890.jpg" placeholder="Plant name is Epipremnum aureum" style="height: 300px; width: 300px" title="Epipremnum aureum">
+        <div class="container">Epipremnum Aureum (Money plant)</div>
+        <p>"Epipremnum aureum"
+          Size: Vines 6 to 10 feet long
+          Water: Allow the top inch of soil to dry out between watering.
+          Fertilize: Light feeders, so use a balanced liquid fertilizer every 1 to 3 months.</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://images.immediate.co.uk/production/volatile/sites/10/2018/09/2048x1365-Houseplants-for-flowers-Torie_Chugg_02_07_18_streptocarpus-caitlin-cf0e6ec.jpg" placeholder="Plant name is Streptocarpus" style="height: 300px; width: 300px" title="Streptocarpus">
+        <div class="container">Streptocarpus</div>
+        <p>Appearance: Streptocarpus flowers are typically trumpet-shaped and can come in a variety of colors, including pink, purple, blue.
+          Common Name: The common name, Cape Primrose, refers to its origin in South Africa and its resemblance to primrose flowers.</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://images.squarespace-cdn.com/content/v1/54fbb611e4b0d7c1e151d22a/1610074066643-OP8HDJUWUH8T5MHN879K/Snake+Plant.jpg?format=1000w" placeholder="Plant name is Dracaena trifasciata" style="height: 300px; width: 300px" title="Dracaena trifasciata">
+        <div class="container">Dracaena trifasciata</div>
+        <p>Appearance: It is a perennial plant with stiff, sword-like leaves that grow vertically from a basal rosette. The leaves often have a banded or variegated pattern. 
+          Snake plants are known for being low-maintenance and are considered easy to care for, making them suitable for beginners.</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://www.gardendesign.com/pictures/images/263x300Exact_76x0/site_3/florida-green-philodendron-climbing-philodendron-philodendron-hybrid-proven-winners_17294.jpg" placeholder="Plant name is PHILODENDRON" style="height: 300px; width: 300px" title="PHILODENDRON">
+        <div class="container">PHILODENDRON</div>
+        <p>PHILODENDRON (Philodendron spp.)
+          Size: Vines to 8 feet long
+          Water: Prefers evenly moist soil, but not soggy. Water if top inch of soil is dry.
+          Fertilize: Apply a water-soluble houseplant fertilizer from spring through fall.</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://hips.hearstapps.com/hmg-prod/images/colorful-exotic-caladium-plants-in-flower-pots-royalty-free-image-1723738296.jpg?crop=0.668xw:1.00xh;0.122xw,0&resize=1200:*" placeholder="Plant name is Tropical Plants" style="height: 300px; width: 300px" title="Tropical Plants">
+        <div class="container">Tropical Plants</div>
+        <p>Tropical plants are species that grow naturally in tropical climates near the equator, characterized by warm temperatures and high humidity year-round.</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://www.aravalii.com/cdn/shop/files/lb-yo_92393879-477e-4be7-97ad-a96412215e97.jpg?v=1702107062&width=900" placeholder="Plant name is Lucky bamboo" style="height: 300px; width: 300px" title="Lucky Bamboo">
+        <div class="container">Lucky Bamboo</div>
+        <p>Lucky bamboo is believed to bring good luck, prosperity, and positive energy according to both Vastu Shastra and Feng Shui, and it also has practical benefits like air purification and aesthetic appeal.</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJr-VWbypyTZSidDd8b-fpAE_jPPcSmJMmLTP8LSSImcWlubz0wjkctm0mmCTQ4OtiPA&usqp=CAU" placeholder="Plant name is Monkey Tail" style="height: 300px; width: 300px" title="Monkey Tail">
+        <div class="container">Monkey's Tail Plant</div>
+        <p> It is an excellent plant for container growing. It always looks good and stays small.</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Petunie.jpg/960px-Petunie.jpg" placeholder="Plant name is Ornamental Plant" style="height: 300px; width: 300px" title="Ornamental Plant">
+        <div class="container">Ornamental Plant</div>
+        <p>plants that are grown for display purposes, rather than functional ones. While some plants are both ornamental and functional, people usually use the term "ornamental plants"</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://greenkin.in/cdn/shop/files/jade-mini-golden-metal-pot-small-greenkin-main.webp?v=1743069772" placeholder="Plant name is Jade plant" style="height: 300px; width: 300px" title="Jade plant">
+        <div class="container">Jade Plant</div>
+        <p>Place a jade plant in a bright, indirect light spot, such as near a window in your living room, office, or near the entrance. </p>
+      </div>
+
+      <div class="card" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFMz0qMG-NNVeJ-ciX0-JIuF1SnH-ad8PXw&s" placeholder="Plant name is Tradescantia Zebrina" style="height: 300px; width: 300px" title="Tradescantia Zebrina">
+        <div class="container">Tradescantia Zebrina</div>
+        <p>This plant does best in light shade outdoors but bright light indoors. It can be moved outdoors after all danger of frost has passed but be sure to acclimate it gradually to brighter conditions to prevent sunburn.</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://www.heraldnet.com/wp-content/uploads/2024/04/35959358_web1_M1-Cameron-edh-240410.jpg" placeholder="Gold Bleeding plant" style="height: 300px; width: 300px" title="Gold Bleeding plant">
+        <div class="container">Gold Heart Bleeding</div>
+        <p>plants prefer morning sun and afternoon shade. They also need well-drained soil and will rot if the soil remains too soggy</p>
+      </div>
+
+      <div class="card" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Wf9Xzur3FZGRD0wtfw8_xNS7b9NRJ_wpeQ&s" placeholder="Plant name is Perennial flower" style="height: 300px; width: 300px" title="Perennial flower">
+        <div class="container">Perennial flower</div>
+        <p>A perennial flower is a plant that lives for more than two years, unlike annuals which only live for one season.</p>
+      </div>
+  </div>
+</section><br><br><br><br><br>
+
+<section-about id="about" class="about">
+  <div2>
+    <p>
+      About:<br>
+      An all-in-one organizer, this application is designed for
+      the modern multi-task who needs more than just a simple checklist 
+      to stay on top of things. This is where productivity meets creativity,
+      allowing you to not only manage your tasks, but also to visually document
+      your progress with an integrated photo gallery. By combining a traditional
+      to-do list with other essential features like note-taking and collaborative tools,
+      it provides a comprehensive yet elegant solution for capturing ideas, organizing projects,
+      and bringing your vision to life in one seamless experience.
+    </p>
+  </div2>
+</section-about>
+</main>
+</body>
+
+<!-- the js connecting link -->
+<script src="script.js" defer></script>
+
+<!-- the footer  -->
+<footer id="contact">Contact<br/>
+</footer>
+</html>
