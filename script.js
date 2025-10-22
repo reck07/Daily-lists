@@ -1,5 +1,4 @@
 
-c
 const wrapper = document.querySelector('.cards-wrapper');
 let scrollAmount = 0;
 
@@ -66,3 +65,4 @@ function showTask(){
 }
 
 showTask()
+
