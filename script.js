@@ -1,17 +1,17 @@
 
-// const wrapper = document.querySelector('.cards-wrapper');
-// let scrollAmount = 0;
+const wrapper = document.querySelector('.cards-wrapper');
+let scrollAmount = 0;
 
-// setInterval(()=>{
-//     scrollAmount += 5;
-//     if (scrollAmount >= wrapper.scrollWidth - wrapper.clientWidth){
-//         scrollAmount = 0; //reset and start
-//     }
-//     wrapper.scrollTo({
-//         left: scrollAmount,
-//         behavior: 'smooth'
-//     });
-// }, 60); //adjust speed
+setInterval(()=>{
+    scrollAmount += 5;
+    if (scrollAmount >= wrapper.scrollWidth - wrapper.clientWidth){
+        scrollAmount = 0; //reset and start
+    }
+    wrapper.scrollTo({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+}, 60); //adjust speed
 
 
 // declaration input to userInput
@@ -64,4 +64,5 @@ function saveData(){
 function showTask(){
   tasklist.innerHTML = localStorage.getItem("data");
 }
+
 showTask()
