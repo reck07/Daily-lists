@@ -1,4 +1,5 @@
 
+c
 const wrapper = document.querySelector('.cards-wrapper');
 let scrollAmount = 0;
 
@@ -12,7 +13,6 @@ setInterval(()=>{
         behavior: 'smooth'
     });
 }, 60); //adjust speed
-
 
 // declaration input to userInput
 const userInput = document.getElementById("userInput");
